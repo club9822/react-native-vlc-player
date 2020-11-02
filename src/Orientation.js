@@ -1,7 +1,7 @@
 import { DeviceEventEmitter, NativeModules, Platform } from 'react-native'
 
-const { Orientation } = NativeModules
-
+// const { Orientation } = NativeModules
+import Orientation from 'react-native-orientation';
 const META = '__listener_id'
 const orientationDidChangeEvent = 'orientationDidChange'
 const specificOrientationDidChangeEvent = 'specificOrientationDidChange'
