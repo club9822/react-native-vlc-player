@@ -86,7 +86,7 @@ class VlcPlayer extends Component {
         height: screenWidth,
         toggle: controls.toggle
       })
-      DeviceOrientation.HideNavigationBar()
+      // DeviceOrientation.HideNavigationBar()
     } else {
       this.setState({
         hidden        : false,
@@ -95,7 +95,7 @@ class VlcPlayer extends Component {
         toggle        : controls.toggle,
         overlayTimeout: null
       })
-      DeviceOrientation.ShowNavigationBar()
+      // DeviceOrientation.ShowNavigationBar()
     }
   };
 
@@ -106,7 +106,7 @@ class VlcPlayer extends Component {
 
     this.setState({
       overlay: {
-        opacity        : 0.6,
+        opacity        : 0.5,
         backgroundColor: 'black'
       },
       overlayTimeout: setTimeout(() => {
